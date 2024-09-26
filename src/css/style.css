@@ -1,0 +1,198 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+html {
+    background-color: var(--primary-color);
+    font-family: "Poppins", sans-serif;;
+}
+
+body {
+    background: url(../images/bg-desktop.svg) no-repeat;
+    background-size: contain;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.page {
+    max-width: 1400px;
+    max-height: 100%;
+    display: grid;
+    grid-template-areas: 
+    "header header"
+    "layout information"
+    "footer footer";
+    grid-template-columns: auto minmax(100px, 591px);
+    grid-template-rows: 137px minmax(50px , auto);
+    padding: 20px 50px;
+    margin-top: 12px;
+}
+
+.header {
+    grid-area: header;
+}
+
+.header .logo {
+    height: 39%;
+}
+
+.layout {
+    grid-area: layout;
+}
+
+.layout img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.information {
+    grid-area: information;
+    padding: 43px 10px 0 54px;
+    color: #ffffff;
+}
+
+.information .title {
+    font-size: 41px;
+    letter-spacing: -0.9px;
+    margin-bottom: 20px;
+}
+
+.information .intro {
+    line-height: 27px;
+    letter-spacing: .4px;
+    margin-bottom: 23px;
+}
+
+.information .btn-register {
+    width: 200px;
+    height: 56px;
+    border-radius: 30px;
+    border: none;
+    box-shadow: 2px 2px 5px #000000;
+    background-color: #ffffff;
+    color: var(--primary-color);
+    font-size: 20px;
+}
+
+.information .btn-register:hover {
+    background-color: var(--soft-color);
+    color: #ffffff;
+    cursor: pointer;
+}
+
+.footer {
+    margin-top: 15px;
+    grid-area: footer;
+    text-align: right;
+    font-size: 18px;
+    height: 40px;
+    padding-right: 5px;
+}
+
+.footer a i {
+    border: 1px solid #ffffff;
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+    text-align: center;
+    margin: 0 6px;
+    padding: 11px;
+}
+
+.footer a:hover i {
+    color: var(--soft-color);
+    border: 1px solid var(--soft-color);
+}
+
+@media (max-width: 1260px) {
+    body {
+        background-size: cover;
+    }
+}
+
+@media (max-width: 834px) {
+    body {
+        background: url(../images/bg-mobile.svg) no-repeat;
+        background-size: contain;
+    }
+
+    .page {
+        max-width: 768px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .header {
+        height: 150px;
+    }
+
+    .layout {
+        max-width: 450px;
+    }
+
+    .information {
+        padding: 50px 0;
+    }
+}
+
+@media(max-width: 420px) {
+    body {
+        align-items: start;
+    }
+
+    .page {
+        max-width: 302px;
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+    }
+
+    .header {
+        margin-top: 20px;
+        height: 92px;
+    }
+
+    .header .logo {
+        height: 34%;
+    }
+
+    .information {
+        margin-top: 53px;
+        padding: 0;
+        text-align: center;
+    }
+
+    .information .title {
+        font-size: 22px;
+        letter-spacing: 1px;
+        line-height: 35px;
+        margin-bottom: 18px;
+    }
+
+    .information .intro {
+        font-size: 14px;
+        line-height: 24px;
+    }
+
+    .information .btn-register {
+        width: 200px;
+        height: 39px;
+        font-size: 14px;
+    }   
+
+    .footer {
+        margin-top: 63px;
+        text-align: center;
+        font-size: 16px;
+        padding-right: 5px;
+    }
+    
+    .footer a i {
+        height: 30px;
+        width: 30px;
+        text-align: center;
+        margin: 0 4px;
+        padding: 5px;
+    }
+}
