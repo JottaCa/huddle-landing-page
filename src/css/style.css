@@ -111,6 +111,33 @@ body {
     }
 }
 
+@media (max-width: 1110px) {
+    .information {
+        padding: 0 10px 0 54px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .information .title {
+        font-size: 22px;
+        letter-spacing: 1px;
+        line-height: 35px;
+        margin-bottom: 18px;
+    }
+
+    .information .intro {
+        font-size: 14px;
+        line-height: 24px;
+    }
+
+    .information .btn-register {
+        width: 200px;
+        height: 39px;
+        font-size: 14px;
+    }   
+}
+
 @media (max-width: 834px) {
     body {
         background: url(../images/bg-mobile.svg) no-repeat;
@@ -162,24 +189,6 @@ body {
         padding: 0;
         text-align: center;
     }
-
-    .information .title {
-        font-size: 22px;
-        letter-spacing: 1px;
-        line-height: 35px;
-        margin-bottom: 18px;
-    }
-
-    .information .intro {
-        font-size: 14px;
-        line-height: 24px;
-    }
-
-    .information .btn-register {
-        width: 200px;
-        height: 39px;
-        font-size: 14px;
-    }   
 
     .footer {
         margin-top: 63px;
