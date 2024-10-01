@@ -114,9 +114,6 @@ body {
 @media (max-width: 1110px) {
     .information {
         padding: 0 10px 0 54px;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
     }
 
     .information .title {
